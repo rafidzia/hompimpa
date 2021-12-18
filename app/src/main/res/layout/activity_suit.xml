@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuitActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/choiceButton1">
+        <ImageButton
+            android:id="@+id/btnStone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_rock"
+            android:layout_margin="20dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:onClick="btnStone"/>
+
+        <ImageButton
+            android:id="@+id/btnPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_paper"
+            android:layout_margin="20dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:onClick="btnPaper"/>
+
+        <ImageButton
+            android:id="@+id/btnScissor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_scissor"
+            android:layout_margin="20dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:onClick="btnScissor"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choiceButton1"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:onClick="submitChoice"/>
+
+</RelativeLayout>
